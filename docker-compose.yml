@@ -59,12 +59,12 @@ services:
     networks:
       - magento
 
-  adminer:
-    image: adminer
-    ports:
-      - 8080:8080
-    networks:
-      - magento
+  # adminer:
+  #   image: adminer
+  #   ports:
+  #     - 8080:8080
+  #   networks:
+  #     - magento
 
   elasticsearch:
     image: elasticsearch:${ELASTICSEARCH_VERSION}

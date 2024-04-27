@@ -58,4 +58,6 @@ COPY ./www.conf /usr/local/etc/php-fpm.d/
 COPY ./php.ini /usr/local/etc/php/
 COPY ./php-fpm.conf /usr/local/etc/
 
+RUN echo "alias magento=\"php /var/www/html/bin/magento\"\nalias ll=\"ls -al\"" >> ~/.bashrc
+
 WORKDIR /var/www/html
